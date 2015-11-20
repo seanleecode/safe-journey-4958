@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 var dbUrl1 = 'mongodb://localhost/rest_test';
 var dbUrl2 = 'mongodb://dbuser:dbpassword@ds057224.mongolab.com:57224/mytodo_db';
-mongoose.connect(dbUrl2);
+mongoose.connect(dbUrl1);
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended:true }));
